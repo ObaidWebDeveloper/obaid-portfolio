@@ -1,0 +1,74 @@
+[
+    {
+        "name": "html",
+        "knowledge": 90
+    },
+    {
+        "name": "css",
+        "knowledge": 70
+    },
+    {
+        "name": "javascript",
+        "knowledge": 70
+    },
+    {
+        "name": "php",
+        "knowledge": 80
+    },
+    {
+        "name": "jquery",
+        "knowledge": 90
+    },
+    {
+        "name": "node js",
+        "knowledge": 55
+    },
+    {
+        "name": "express js",
+        "knowledge": 60
+    },
+    {
+        "name": "react",
+        "knowledge": 40
+    },
+    {
+        "name": "ejs",
+        "knowledge": 80
+    },
+    {
+        "name": "npm",
+        "knowledge": 65
+    },
+    {
+        "name": "wordpress",
+        "knowledge": 40
+    },
+    {
+        "name": "cmd",
+        "knowledge": 40
+    },
+    {
+        "name": "data science",
+        "knowledge": 55
+    },
+    {
+        "name": "sql",
+        "knowledge": 50
+    },
+    {
+        "name": "seo",
+        "knowledge": 40
+    },
+    {
+        "name": "svg",
+        "knowledge": 70
+    },
+    {
+        "name": "designing",
+        "knowledge": 50
+    },
+    {
+        "name": "canva",
+        "knowledge": 70
+    }
+]

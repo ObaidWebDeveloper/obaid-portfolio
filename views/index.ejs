@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Full-stack web developer with expertise in backend development, SEO, PHP, Node.js, AI, designing, video editing, and social media marketing. Building scalable web solutions and optimizing digital presence." />
+    <meta name="keywords"
+        content="Full-Stack Developer, Web Development, Backend Development, PHP, Node.js, SEO, Software Engineering, AI, Designing, Video Editing, Social Media Marketing, Content Writing, Database Management, Cloud Deployment, RESTful APIs" />
+    <title>Obaid Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/menuPopup.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/svg+xml">
+</head>
+
+<body>
+    <div class="container">
+        <div class="loading">
+            <div class="loader"></div>
+        </div>
+
+        <div class="message_popup">
+            <b>10s</b>
+            <span>this message was a success</span>
+            <i class="fa fa-close"></i>
+        </div>
+
+        <%- include('partials/menuPopup') %>
+            <%- include('partials/header') %>
+                <section>
+                    <%- include('pages/'+page) %>
+                </section>
+                <!-- <%- include('partials/footer') %> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/menuPopup.js"></script>
+    <script src="/js/cardScroll.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
