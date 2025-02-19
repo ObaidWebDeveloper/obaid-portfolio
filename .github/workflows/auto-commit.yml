@@ -1,0 +1,26 @@
+name: Auto Commit & Push
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Har 6 ghante baad auto commit karega
+  push:
+    branches:
+      - main  # Apni branch ka naam yahan likho
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository Clone
+        uses: actions/checkout@v3
+
+      - name: Set Git User
+        run: |
+          git config --global user.email "your-email@example.com"
+          git config --global user.name "GitHub Bot"
+
+      - name: Auto Commit
+        run: |
+          git add .
+          git commit -m "🤖 Auto update - $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
