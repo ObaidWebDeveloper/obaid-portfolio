@@ -100,4 +100,9 @@ routes.use((req, res) => {
 });
 
 
+routes.get('/sitemap.xml', (req, res) => {
+    res.render('sitemap.xml');
+})
+
+
 module.exports = routes;
