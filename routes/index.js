@@ -97,7 +97,7 @@ routes.post('/send', async (req, res) => {
 
 
 routes.get('/sitemap.xml', (req, res) => {
-    const sitemapFile = fs.readFileSync('../sitemap.xml','utf-8');
+    const sitemapFile = fs.readFileSync('sitemap.xml','utf-8');
     res.send(sitemapFile);
 })
 
