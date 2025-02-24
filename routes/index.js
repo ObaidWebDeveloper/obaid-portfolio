@@ -97,7 +97,8 @@ routes.post('/send', async (req, res) => {
 
 
 routes.get('/sitemap.xml', (req, res) => {
-    res.send(path);
+    const sitemapFile = fs.readFileSync('../sitemap.xml','utf-8');
+    res.send(sitemapFile);
 })
 
 // 404 not found route
