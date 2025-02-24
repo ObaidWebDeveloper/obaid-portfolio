@@ -95,14 +95,14 @@ routes.post('/send', async (req, res) => {
     res.send(message);
 });
 
-routes.use((req, res) => {
-    res.status(404).render('index', { page: "404", pages: pages });
-});
-
 
 routes.get('/sitemap.xml', (req, res) => {
     res.render('sitemap.xml');
 })
 
+// 404 not found route
+routes.use((req, res) => {
+    res.status(404).render('index', { page: "404", pages: pages });
+});
 
 module.exports = routes;
