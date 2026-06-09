@@ -70,8 +70,8 @@ routes.post('/send', async (req, res) => {
             port: 587,
             secure: false,
             auth: {
-                user: process.env.EMAIL,
-                pass: process.env.PASSWORD,
+                user: "mobaidwebdeveloper@gmail.com",
+                pass: "gvmk ogvt zltb ziff",
             },
             tls: {
                 rejectUnauthorized: false,
@@ -79,7 +79,7 @@ routes.post('/send', async (req, res) => {
         });
 
         let mailOptions = {
-            from: process.env.EMAIL,
+            from: "mobaidwebdeveloper@gmail.com",
             to,
             subject,
             text,
