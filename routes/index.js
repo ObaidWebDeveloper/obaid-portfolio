@@ -78,12 +78,33 @@ routes.post('/send', async (req, res) => {
             },
         });
 
-        let mailOptions = {
-            from: "mobaidwebdeveloper@gmail.com",
-            to,
-            subject,
-            text,
-        };
+        const mailOptions = {
+  from: '"Obaid Portfolio" <motech508@gmail.com>',
+  to: "motech508@gmail.com",
+  subject: `📩 New Contact Form Submission from ${name}`,
+  html: `
+    <div style="font-family: Arial, sans-serif; max-width: 600px;">
+      <h2 style="color: #2563eb;">Obaid Portfolio</h2>
+      <p>You have received a new message from your website contact form.</p>
+
+      <hr>
+
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+
+      <p><strong>Message:</strong></p>
+      <div style="background:#f5f5f5;padding:15px;border-radius:5px;">
+        ${message}
+      </div>
+
+      <hr>
+
+      <p style="color:#666;font-size:12px;">
+        This email was sent from the Obaid Portfolio contact form.
+      </p>
+    </div>
+  `,
+};
 
         let info = await transporter.sendMail(mailOptions);
 
