@@ -81,7 +81,7 @@ routes.post('/send', async (req, res) => {
         const mailOptions = {
   from: '"Obaid Portfolio" <motech508@gmail.com>',
   to: "motech508@gmail.com",
-  subject: `📩 New Contact Form Submission from ${name}`,
+  subject: `📩 New Contact Form Submission from ${subject}`,
   html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px;">
       <h2 style="color: #2563eb;">Obaid Portfolio</h2>
@@ -89,12 +89,12 @@ routes.post('/send', async (req, res) => {
 
       <hr>
 
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Name:</strong> ${subject}</p>
+      <p><strong>Email:</strong> ${to}</p>
 
       <p><strong>Message:</strong></p>
       <div style="background:#f5f5f5;padding:15px;border-radius:5px;">
-        ${message}
+        ${text}
       </div>
 
       <hr>
